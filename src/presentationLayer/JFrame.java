@@ -9,6 +9,9 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 public class JFrame extends javax.swing.JFrame {
 
@@ -38,74 +41,48 @@ public class JFrame extends javax.swing.JFrame {
 		setTitle("Trainerverwaltung");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 856, 571);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenuItem mntmNeuerTrainer = new JMenu("Men\u00FC");
+		menuBar.add(mntmNeuerTrainer);
+		
+		JMenuItem mntmNewMenuItem = new JMenuItem("Daten \u00E4ndern");
+		mntmNeuerTrainer.add(mntmNewMenuItem);
+		
+		JMenuItem mntmTrainerLschen = new JMenuItem("Trainer l\u00F6schen");
+		mntmNeuerTrainer.add(mntmTrainerLschen);
+		
+		JMenuItem mntmDatenSuchen = new JMenuItem("Daten suchen");
+		mntmNeuerTrainer.add(mntmDatenSuchen);
+		
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton newDataSet = new JButton("Neuer Trainer");
-		newDataSet.setBounds(12, 26, 145, 40);
-		contentPane.add(newDataSet);
-		
-		JButton deleteDataSet = new JButton("Trainer löschen");
-		deleteDataSet.setBounds(241, 26, 145, 40);
-		contentPane.add(deleteDataSet);
-		
-		JButton changeDataSet = new JButton("Daten ändern");
-		changeDataSet.setBounds(464, 26, 145, 40);
-		contentPane.add(changeDataSet);
-		
-		JButton surchDataSet = new JButton("Daten suchen");
-		surchDataSet.setBounds(681, 26, 145, 40);
-		contentPane.add(surchDataSet);
-		
 		JButton firstTrainer = new JButton("erster Trainer");
-		firstTrainer.setBounds(346, 136, 145, 40);
+		firstTrainer.setBounds(12, 449, 145, 40);
 		contentPane.add(firstTrainer);
 		
 		JButton nextTrainer = new JButton("nächster Trainer");
-		nextTrainer.setBounds(346, 300, 145, 40);
+		nextTrainer.setBounds(451, 449, 145, 40);
 		contentPane.add(nextTrainer);
 		
 		JButton previousTrainer = new JButton("vorheriger Trainer");
-		previousTrainer.setBounds(346, 213, 145, 40);
+		previousTrainer.setBounds(225, 449, 145, 40);
 		contentPane.add(previousTrainer);
 		
 		JButton lastTrainer = new JButton("letzter Trainer");
-		lastTrainer.setBounds(346, 390, 145, 40);
+		lastTrainer.setBounds(681, 449, 145, 40);
 		contentPane.add(lastTrainer);
 		
 		textField = new JTextField();
 		textField.setVisible(false);
-		textField.setBounds(169, 158, 500, 302);
+		textField.setBounds(12, 12, 814, 425);
 		contentPane.add(textField);
 		textField.setColumns(10);
-		
-		
-		newDataSet.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		
-		deleteDataSet.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				if(newDataSet.isVisible()) {
-					changeDataSet.setVisible(false);
-					return;
-				}
-				newDataSet.setVisible(true);
-			}
-		});
-		
-		changeDataSet.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		
-		surchDataSet.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
 		
 		firstTrainer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
