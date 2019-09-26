@@ -5,9 +5,12 @@ public class DataLayerManager {
 	private static DataLayerManager instance;
 	private IDataLayer dataLayer;
 	
-	private void DataLayerManager() {
+
+	public DataLayerManager(IDataLayer dataLayer) {
+		super();
+		this.dataLayer = dataLayer;
 	}
-	
+
 	public static DataLayerManager getInstance() {
 		return instance;
 	}
