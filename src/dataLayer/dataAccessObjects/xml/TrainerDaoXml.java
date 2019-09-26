@@ -3,52 +3,102 @@ package OOP.Datenbums.src.dataLayer.dataAccessObjects.xml;
 import OOP.Datenbums.src.businessObjects.ITrainer;
 import OOP.Datenbums.src.dataLayer.businessObjects.Trainer;
 import OOP.Datenbums.src.dataLayer.dataAccessObjects.ITrainerDao;
+import OOP.Datenbums.src.exceptions.NoTrainerFoundException;
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.BufferedInputStream;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class TrainerDaoXml implements ITrainerDao {
 
-    private Document doc;
+    private String filePath;
 
-    public TrainerDaoXml() {
-        this.doc = xmlParser("file.xml");
+    public TrainerDaoXml(String filePath) {
+        this.filePath = filePath;
     }
 
-    private Document xmlParser(String filename) {
+    private List<ITrainer> parseXml() {
+        List<ITrainer> trainerList = new ArrayList<>();
+
         try {
-            File file = new File(filename);
+            File file = new File(filePath);
 
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document document = dBuilder.parse(new FileInputStream(file));
 
-            Path path = Paths.get(getClass().getClassLoader()
-                    .getResource("file.xml").toURI());
+            NodeList childNodes = document.getDocumentElement().getChildNodes();
+            for (int i = 0; i < childNodes.getLength(); i++) {
+                Node item = childNodes.item(i);
 
-            Stream<String> lines = Files.lines(path);
-            String data = lines.collect(Collectors.joining("\n"));
-            System.out.println(data);
-            lines.close();
+                if (item.getNodeType() == Node.ELEMENT_NODE) {
+                    Element element = (Element) item;
 
-            return document;
+                    int ID = Integer.parseInt(item.getAttributes().getNamedItem("id").getNodeValue());
+
+                    String name = element.getElementsByTagName("name")
+                            .item(0).getChildNodes()
+                            .item(0).getNodeValue();
+                    int age = Integer.parseInt(element.getElementsByTagName("alter")
+                            .item(0).getChildNodes()
+                            .item(0).getNodeValue());
+                    int experience = Integer.parseInt(element.getElementsByTagName("erfahrung")
+                            .item(0).getChildNodes()
+                            .item(0).getNodeValue());
+
+                    trainerList.add(new Trainer(ID, name, age, experience));
+                }
+            }
+
         } catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Hier lief was schief");
-
-            //throw new NullPointerException("document = null");
         }
-        return null;
+        return trainerList;
+    }
+
+    private String trainerToXml(ITrainer trainer) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("<trainer id=\"").append(trainer.getId()).append("\">")
+                .append("<name>").append(trainer.getName()).append("</name>")
+                .append("<alter>").append(trainer.getAlter()).append("</alter>")
+                .append("<erfahrung>").append(trainer.getErfahrung()).append("</erfahrung>")
+                .append("</trainer>")
+
+        ;
+
+        return sb.toString();
+    }
+
+    private void writeXml(List<ITrainer> trainerList) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("<trainer-list>");
+        trainerList.stream()
+                .map(this::trainerToXml)
+                .forEach(sb::append);
+        sb.append("</trainer-list>");
+
+        Path path = Paths.get(filePath);
+        try (BufferedWriter bw = Files.newBufferedWriter(path)) {
+            bw.write(sb.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Override
@@ -59,43 +109,97 @@ public class TrainerDaoXml implements ITrainerDao {
 
     @Override
     public void delete(ITrainer trainer) {
-        int trainerId = trainer.getId();
-
-        System.out.println(doc.getElementById("Trainer").getAttribute("Alter"));
+        List<ITrainer> trainerList = select();
+        trainerList.removeIf(t -> t.getId() == trainer.getId());
+        writeXml(trainerList);
     }
 
     @Override
     public ITrainer first() {
-        return null;
+        List<ITrainer> trainerList = select();
+
+
+        if (trainerList.isEmpty()) {
+            return null;
+        }
+        return trainerList.get(0);
     }
 
     @Override
     public ITrainer last() {
-        return null;
+        List<ITrainer> trainerList = select();
+
+        if (trainerList.isEmpty()) {
+            return null;
+        }
+        return trainerList.get(trainerList.size() - 1);
     }
 
     @Override
     public ITrainer next(ITrainer trainer) {
-        return null;
+        List<ITrainer> trainerList = select();
+        return getPositionedTrainer(trainerList, t -> t.getId() > trainer.getId());
     }
 
     @Override
     public ITrainer previous(ITrainer trainer) {
-        return null;
+        List<ITrainer> trainerList = select();
+        return getPositionedTrainer(trainerList, t -> t.getId() < trainer.getId());
+    }
+
+    private ITrainer getPositionedTrainer(List<ITrainer> trainerList, Predicate<ITrainer> filterPredicate) {
+        if (trainerList.isEmpty() || trainerList.size() < 2) {
+            //TODO: Exception
+        }
+
+        return trainerList.stream()
+                .filter(filterPredicate)
+                .findFirst()
+                .orElse(null);
     }
 
     @Override
     public void save(ITrainer trainer) {
+        List<ITrainer> trainerList = select();
 
+        if (trainer.getId() == 0) {
+            if (trainer instanceof Trainer) {
+                Trainer t = (Trainer) trainer;
+                ITrainer lastTrainer = last();
+                if (lastTrainer == null) {
+                    t.setId(1);
+                } else {
+                    t.setId(lastTrainer.getId() + 1);
+                }
+            }
+            trainerList.add(trainer);
+            writeXml(trainerList);
+            return;
+        }
+
+        trainerList.stream()
+                .filter(t -> t.getId() == trainer.getId())
+                .findFirst()
+                .ifPresent(t -> {
+                    t.setName(trainer.getName());
+                    t.setAlter(trainer.getAlter());
+                    t.setErfahrung(trainer.getErfahrung());
+                    writeXml(trainerList);
+                });
     }
 
     @Override
     public List<ITrainer> select() {
-        return null;
+        List<ITrainer> trainerList = parseXml();
+        trainerList.sort(Comparator.comparingInt(ITrainer::getId));
+        return trainerList;
     }
 
     @Override
     public ITrainer select(int id) {
-        return null;
+        return select().stream()
+                .filter(t -> t.getId() == id)
+                .findFirst()
+                .orElse(null);
     }
 }

@@ -21,7 +21,7 @@ public class Trainer implements ITrainer {
 
     @Override
     public int getId() {
-        return 0;
+        return id;
     }
 
     public void setId(int id) {
@@ -30,31 +30,32 @@ public class Trainer implements ITrainer {
 
     @Override
     public String getName() {
-        return null;
+        return name;
     }
 
     @Override
     public void setName(String name) {
-
+        this.name = name;
     }
 
     @Override
     public int getAlter() {
-        return 0;
+        return alter;
     }
 
     @Override
     public void setAlter(int alter) {
-
+        this.alter = alter;
     }
 
     @Override
     public int getErfahrung() {
-        return 0;
+        return erfahrung;
     }
 
     @Override
     public void setErfahrung(int erfahrung) {
-
+        this.erfahrung = erfahrung;
     }
+
 }
