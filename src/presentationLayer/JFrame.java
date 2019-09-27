@@ -1,15 +1,24 @@
 package presentationLayer;
 
-import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import java.awt.*;
-import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
+import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JTable;
 
 public class JFrame extends javax.swing.JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
+	private JTextField txtTrainerbersicht;
+	private JTable table;
 
 	/**
 	 * Launch the application.
@@ -59,7 +68,7 @@ public class JFrame extends javax.swing.JFrame {
 		firstTrainer.setBounds(12, 449, 145, 40);
 		contentPane.add(firstTrainer);
 		
-		JButton nextTrainer = new JButton("nï¿½chster Trainer");
+		JButton nextTrainer = new JButton("nächster Trainer");
 		nextTrainer.setBounds(451, 449, 145, 40);
 		contentPane.add(nextTrainer);
 		
@@ -71,16 +80,20 @@ public class JFrame extends javax.swing.JFrame {
 		lastTrainer.setBounds(681, 449, 145, 40);
 		contentPane.add(lastTrainer);
 		
-		textField = new JTextField();
-		textField.setVisible(false);
-		textField.setBounds(12, 12, 814, 425);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		txtTrainerbersicht = new JTextField();
+		txtTrainerbersicht.setText("Trainer\u00FCbersicht");
+		txtTrainerbersicht.setBounds(12, 12, 145, 34);
+		contentPane.add(txtTrainerbersicht);
+		txtTrainerbersicht.setColumns(10);
+		
+		table = new JTable();
+		table.setBounds(25, 408, 770, -340);
+		contentPane.add(table);
 		
 		firstTrainer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if(!textField.isVisible()) {
-					textField.setVisible(true);
+				if(!txtTrainerbersicht.isVisible()) {
+					txtTrainerbersicht.setVisible(true);
 					firstTrainer.setBounds(346, 106, 145, 40);
 					nextTrainer.setBounds(681, 289, 145, 40);
 					previousTrainer.setBounds(12, 295, 145, 40);
