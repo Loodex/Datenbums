@@ -5,6 +5,7 @@ import exceptions.NoNextTrainerFoundException;
 import exceptions.NoPreviousTrainerFoundException;
 import exceptions.NoTrainerFoundException;
 
+
 import java.util.List;
 
 public interface ITrainerDao {

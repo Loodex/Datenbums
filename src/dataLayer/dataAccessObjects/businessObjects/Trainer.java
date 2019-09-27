@@ -49,4 +49,3 @@ public class Trainer implements ITrainer {
     }
 
 }
-
