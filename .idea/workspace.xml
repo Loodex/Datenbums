@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d248026-35d5-4e98-b14a-6a0ad91b40ee" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/presentationLayer/TrainerTableModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/businessObjects/ITrainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/businessObjects/ITrainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataLayer/IDataLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataLayer/IDataLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataLayer/dataAccessObjects/ITrainerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataLayer/dataAccessObjects/ITrainerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataLayer/dataAccessObjects/businessObjects/Trainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataLayer/dataAccessObjects/businessObjects/Trainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataLayer/dataAccessObjects/sqlite/DataLayerSqlite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataLayer/dataAccessObjects/sqlite/DataLayerSqlite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataLayer/dataAccessObjects/xml/DataLayerXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataLayer/dataAccessObjects/xml/DataLayerXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dataLayer/dataAccessObjects/xml/TrainerDaoXml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataLayer/dataAccessObjects/xml/TrainerDaoXml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/NoNextTrainerFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/NoNextTrainerFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/NoPreviousTrainerFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/NoPreviousTrainerFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/NoTrainerFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/NoTrainerFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentationLayer/JFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentationLayer/JFrame.java" afterDir="false" />
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,13 +27,49 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1787676272">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="7" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/xml/TrainerDaoXml.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/ITrainerDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="170">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,10 +78,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataLayer/settings/PersistenceSettings.java">
+        <entry file="file://$PROJECT_DIR$/src/dataLayer/IDataLayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -38,7 +89,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/presentationLayer/JFrame.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="216">
+=======
+            <state relative-caret-position="68">
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -47,29 +102,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataLayer/settings/SettingsManager.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="34">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataLayer/DataLayerManager.java">
+        <entry file="file://$PROJECT_DIR$/src/exceptions/NoNextTrainerFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="34">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataLayer/IDataLayer.java">
+        <entry file="file://$PROJECT_DIR$/src/exceptions/NoPreviousTrainerFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/exceptions/NoTrainerFoundException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -77,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/sqlite/DataLayerSqlite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="136">
               <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,7 +153,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/xml/DataLayerXml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="136">
               <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -98,6 +162,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,6 +188,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -182,18 +249,81 @@
               <item name="Datenbums" type="b2602c69:ProjectViewProjectNode" />
               <item name="Datenbums" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+              <item name="businessObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Datenbums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datenbums" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataLayer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Datenbums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datenbums" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="dataAccessObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Datenbums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datenbums" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="dataAccessObjects" type="462c0819:PsiDirectoryNode" />
+              <item name="businessObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Datenbums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datenbums" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="dataAccessObjects" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Datenbums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datenbums" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="dataAccessObjects" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Datenbums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datenbums" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Datenbums" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Datenbums" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
               <item name="presentationLayer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569574412498" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569571587390" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -280,6 +410,10 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3292683" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
+<<<<<<< HEAD
+=======
+      <window_info anchor="right" id="Maven Projects" />
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -294,38 +428,82 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/exceptions/NoTrainerFoundException.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataLayer/businessObjects/Trainer.java">
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/businessObjects/Trainer.java" />
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/ITrainerDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/DataLayerManager.java" />
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/settings/SettingsManager.java" />
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/settings/PersistenceSettings.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="17">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/businessObjects/ITrainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/dataLayer/ITrainerDao.java" />
     <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/xml/TrainerDaoXml.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="729">
           <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/businessObjects/Trainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/sqlite/DataLayerSqlite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/ITrainerDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/xml/DataLayerXml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/xml/TrainerDaoXml.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/dataLayer/settings/PersistenceSettings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -340,32 +518,68 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataLayer/settings/SettingsManager.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/ITrainerDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataLayer/IDataLayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exceptions/NoNextTrainerFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exceptions/NoPreviousTrainerFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/dataLayer/DataLayerManager.java">
+=======
+    <entry file="file://$PROJECT_DIR$/src/exceptions/NoTrainerFoundException.java">
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
+        <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dataLayer/IDataLayer.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="108">
           <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+=======
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dataLayer/dataAccessObjects/sqlite/DataLayerSqlite.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="216">
           <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding>
@@ -402,6 +616,10 @@
             <element signature="e#699#700#0" expanded="true" />
             <element signature="e#743#744#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="34">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+>>>>>>> cc012bf6117e8b46424ce63c519e6abcb6f60e99
         </state>
       </provider>
     </entry>
