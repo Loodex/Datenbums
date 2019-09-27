@@ -1,4 +1,4 @@
-package OOP.Datenbums.src.exceptions;
+package Datenbums.src.exceptions;
 
 public class NoNextTrainerFoundException extends Exception {
     public NoNextTrainerFoundException(String message) {
