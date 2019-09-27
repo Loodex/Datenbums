@@ -1,8 +1,8 @@
 package dataLayer.dataAccessObjects.xml;
 
 import businessObjects.ITrainer;
-import dataLayer.businessObjects.Trainer;
 import dataLayer.dataAccessObjects.ITrainerDao;
+import dataLayer.dataAccessObjects.businessObjects.Trainer;
 import exceptions.NoTrainerFoundException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -62,7 +62,12 @@ public class TrainerDaoXml implements ITrainerDao {
                             .item(0).getChildNodes()
                             .item(0).getNodeValue());
 
-                    trainerList.add(new Trainer(ID, name, age, experience));
+                    Trainer trainer = new Trainer();
+                    trainer.setId(ID);
+                    trainer.setName(name);
+                    trainer.setAlter(age);
+                    trainer.setErfahrung(experience);
+                    trainerList.add(trainer);
                 }
             }
 
