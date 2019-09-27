@@ -1,17 +1,10 @@
 package presentationLayer;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JPanel;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JTextField;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
+import java.awt.*;
 import java.awt.event.ActionEvent;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
+import java.awt.event.ActionListener;
 
 public class JFrame extends javax.swing.JFrame {
 
@@ -66,7 +59,7 @@ public class JFrame extends javax.swing.JFrame {
 		firstTrainer.setBounds(12, 449, 145, 40);
 		contentPane.add(firstTrainer);
 		
-		JButton nextTrainer = new JButton("nächster Trainer");
+		JButton nextTrainer = new JButton("nï¿½chster Trainer");
 		nextTrainer.setBounds(451, 449, 145, 40);
 		contentPane.add(nextTrainer);
 		

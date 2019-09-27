@@ -1,4 +1,4 @@
-package Datenbums.src.dataLayer.dataAccessObjects;
+package dataLayer.dataAccessObjects;
 
 import Datenbums.src.businessObjects.ITrainer;
 
