@@ -1,9 +1,9 @@
-package OOP.Datenbums.src.dataLayer.dataAccessObjects.xml;
+package Datenbums.src.dataLayer.dataAccessObjects.xml;
 
-import OOP.Datenbums.src.businessObjects.ITrainer;
-import OOP.Datenbums.src.dataLayer.businessObjects.Trainer;
-import OOP.Datenbums.src.dataLayer.dataAccessObjects.ITrainerDao;
-import OOP.Datenbums.src.exceptions.NoTrainerFoundException;
+import Datenbums.src.businessObjects.ITrainer;
+import Datenbums.src.dataLayer.businessObjects.Trainer;
+import Datenbums.src.dataLayer.dataAccessObjects.ITrainerDao;
+import Datenbums.src.exceptions.NoTrainerFoundException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
