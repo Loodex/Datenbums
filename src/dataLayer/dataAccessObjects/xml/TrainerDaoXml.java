@@ -1,9 +1,9 @@
 package dataLayer.dataAccessObjects.xml;
 
-import Datenbums.src.businessObjects.ITrainer;
-import Datenbums.src.dataLayer.businessObjects.Trainer;
-import Datenbums.src.dataLayer.dataAccessObjects.ITrainerDao;
-import Datenbums.src.exceptions.NoTrainerFoundException;
+import businessObjects.ITrainer;
+import dataLayer.businessObjects.Trainer;
+import dataLayer.dataAccessObjects.ITrainerDao;
+import exceptions.NoTrainerFoundException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

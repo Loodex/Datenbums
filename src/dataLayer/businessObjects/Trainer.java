@@ -1,6 +1,6 @@
 package dataLayer.businessObjects;
 
-import Datenbums.src.businessObjects.ITrainer;
+import businessObjects.ITrainer;
 
 public class Trainer implements ITrainer {
 

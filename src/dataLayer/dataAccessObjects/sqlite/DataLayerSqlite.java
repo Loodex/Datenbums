@@ -1,7 +1,7 @@
 package dataLayer.dataAccessObjects.sqlite;
 
 import dataLayer.IDataLayer;
-import dataLayer.ITrainerDao;
+import dataLayer.dataAccessObjects.ITrainerDao;
 
 public class DataLayerSqlite implements IDataLayer{
 

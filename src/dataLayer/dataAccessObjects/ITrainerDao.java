@@ -1,6 +1,6 @@
 package dataLayer.dataAccessObjects;
 
-import Datenbums.src.businessObjects.ITrainer;
+import businessObjects.ITrainer;
 
 import java.util.List;
 
