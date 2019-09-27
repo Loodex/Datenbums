@@ -1,8 +1,8 @@
-package OOP.Datenbums.src;
+package Datenbums.src;
 
-import OOP.Datenbums.src.businessObjects.ITrainer;
-import OOP.Datenbums.src.dataLayer.businessObjects.Trainer;
-import OOP.Datenbums.src.dataLayer.dataAccessObjects.xml.TrainerDaoXml;
+import Datenbums.src.businessObjects.ITrainer;
+import Datenbums.src.dataLayer.businessObjects.Trainer;
+import Datenbums.src.dataLayer.dataAccessObjects.xml.TrainerDaoXml;
 
 import java.util.List;
 
