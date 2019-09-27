@@ -1,4 +1,4 @@
-package Datenbums.src.businessObjects;
+package businessObjects;
 
 public interface ITrainer {
     int getId();

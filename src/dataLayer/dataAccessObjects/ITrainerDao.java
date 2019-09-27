@@ -1,26 +1,22 @@
-package Datenbums.src.dataLayer.dataAccessObjects;
+package dataLayer.dataAccessObjects;
 
-import Datenbums.src.businessObjects.ITrainer;
+import businessObjects.ITrainer;
+import exceptions.NoNextTrainerFoundException;
+import exceptions.NoPreviousTrainerFoundException;
+import exceptions.NoTrainerFoundException;
 
 import java.util.List;
 
 public interface ITrainerDao {
+
     ITrainer create();
-
-    void delete(ITrainer trainer);
-
-    ITrainer first();
-
-    ITrainer last();
-
-    ITrainer next(ITrainer trainer);
-
-    ITrainer previous(ITrainer trainer);
-
+    void delete(ITrainer trainer) throws NoTrainerFoundException;
+    ITrainer first() throws NoTrainerFoundException;
+    ITrainer last() throws NoTrainerFoundException;
+    ITrainer next(ITrainer trainer) throws NoNextTrainerFoundException;
+    ITrainer previous(ITrainer trainer) throws NoPreviousTrainerFoundException;
     void save(ITrainer trainer);
-
     List<ITrainer> select();
-
-    ITrainer select(int id);
+    ITrainer select(int id) throws NoTrainerFoundException;
 
 }
